@@ -2,7 +2,6 @@ package sample.jpa
 
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner
-import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.autoconfigure.condition.ConditionEvaluationReport
 import org.springframework.boot.autoconfigure.condition.ConditionEvaluationReport.ConditionAndOutcome
@@ -12,10 +11,10 @@ import org.springframework.context.annotation.Bean
 import java.util.function.Consumer
 
 @SpringBootApplication
-class SampleJpaKotlinApplication
+class SampleJpaApplication
 
 fun main(args: Array<String>) {
-    runApplication<SampleJpaKotlinApplication>(*args)
+    runApplication<SampleJpaApplication>(*args)
 }
 
 @Bean

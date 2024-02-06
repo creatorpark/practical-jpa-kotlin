@@ -1,0 +1,55 @@
+server:
+  port: 8100
+  error:
+    whitelabel:
+      enabled: false
+
+spring:
+  application:
+    name: SAMPLE-JPA-KOTLIN
+  profiles:
+    active: test
+  output:
+    ansi:
+      enabled: always
+  banner:
+    location: classpath:/test-logo.txt
+  datasource:
+    url: jdbc:h2:mem:jpa;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;DATABASE_TO_UPPER=false;MODE=MySQL;INIT=RUNSCRIPT FROM 'src/test/resources/sql/table.sql';
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  test:
+    database:
+      # @DataJpaTest를 사용하면 기본 H2가 사용되는데 세팅한 H2를 사용하기 위해서는 이 옵션을 줘야함.
+      replace: NONE
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: never
+  jpa:
+    hibernate:
+      ddl-auto: none
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+    database-platform: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+
+logging:
+  level:
+    sun.rmi: ERROR
+    org.apache: ERROR
+    com.zaxxer.hikari.pool.HikariPool: ERROR
+    org.springframework: ERROR
+    org.springframework.http: ERROR
+    org.springframework.security: ERROR
+    sample.jpa: DEBUG
+
+decorator.datasource.p6spy.enable-logging: true
+kotest.framework.classpath.scanning.config.disable: true
+kotest.framework.config.fqn: sample.jpa.KotestConfig
