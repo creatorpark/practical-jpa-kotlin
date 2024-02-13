@@ -1,13 +1,11 @@
 package sample.jpa.a_entiity.id
 
-import jakarta.persistence.MappedSuperclass
 import jakarta.persistence.PostLoad
 import jakarta.persistence.PostPersist
 import org.hibernate.proxy.HibernateProxy
 import org.springframework.data.domain.Persistable
-import java.util.*
 
-@MappedSuperclass
+//@MappedSuperclass
 abstract class AbstractId<ID> : Persistable<ID> {
     abstract override fun getId(): ID
 
@@ -22,34 +20,39 @@ abstract class AbstractId<ID> : Persistable<ID> {
     }
 
     override fun equals(other: Any?): Boolean {
+        println("equals CALL")
         if (this === other) return true
+        println("this === other false")
         if (other == null) return false
-
+        println("other == null true")
+        println("other is HibernateProxy " + (other is HibernateProxy))
         val otherClass = if (other is HibernateProxy) {
+            print("OTHER IS HIBERNATE PROXY")
             other.hibernateLazyInitializer.persistentClass
         } else {
             other::class.java
         }
 
+        println("this is HibernateProxy " + (this is HibernateProxy))
         val thisClass = if (this is HibernateProxy) {
+            print("THIS IS HIBERNATE PROXY")
             this.hibernateLazyInitializer.persistentClass
         } else {
             this::class.java
         }
 
         if (thisClass != otherClass) return false
-        return idCompare(other)
+        return equalsId(other)
     }
 
     override fun hashCode(): Int {
         return if (this is HibernateProxy) {
             this.hibernateLazyInitializer.persistentClass.hashCode()
         } else {
-            Objects.hashCode(getId())
+            javaClass.hashCode()
         }
     }
 
-
-    protected abstract fun idCompare(other: Any): Boolean
+    protected abstract fun equalsId(other: Any): Boolean
 }
 

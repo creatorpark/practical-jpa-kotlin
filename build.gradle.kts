@@ -57,6 +57,8 @@ dependencies {
     implementation("com.querydsl:querydsl-jpa:${queryDsl}:jakarta")
     implementation("com.h2database:h2")
     implementation("com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0")
+
+    implementation("io.hypersistence:hypersistence-utils-hibernate-62:3.5.1")
     // infra
     // https://github.com/FasterXML/jackson-module-kotlin
     // jackson-module-kotlin 버전과 kotlin-reflect 버전을 맞춰야함.
@@ -66,7 +68,6 @@ dependencies {
     implementation("io.github.oshai:kotlin-logging-jvm:${log}")
     // TEST
     testImplementation("com.h2database:h2")
-
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.kotest.extensions:kotest-extensions-spring:${koTestSpring}")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:${koTest}")
