@@ -10,15 +10,12 @@ import sample.jpa.a_entiity.id.TsId
 // 
 @Entity
 class OrderItem(
-    val name: String,
+    order: Order,
+    var name: String,
     var count: Long,
     var price: Long
 ) : TsId() {
-
     @ManyToOne
     @JoinColumn(name = "ORDER_ID")
-    lateinit var order: Order
-
+    var order: Order = order
 }
-
-

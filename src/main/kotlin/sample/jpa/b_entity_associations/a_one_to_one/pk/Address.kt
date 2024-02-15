@@ -1,4 +1,4 @@
-package sample.jpa.b_entity_associations.b_many_to_one
+package sample.jpa.b_entity_associations.a_one_to_one.pk
 
 import jakarta.persistence.Entity
 import jakarta.persistence.FetchType
@@ -8,15 +8,15 @@ import sample.jpa.a_entiity.id.TsId
 
 
 @Entity
-class Player(
+class Address(
     val name: String,
     val uniformNumber: Int,
-    team: Team
+    user: User
 ) : TsId() {
     
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "TEAM_ID", referencedColumnName = "ID")
-    var team: Team = team
+    var user: User = user
 }
 
 
