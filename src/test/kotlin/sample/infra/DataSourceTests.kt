@@ -1,4 +1,4 @@
-package sample.jpa
+package sample.infra
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.junit.jupiter.api.Test
