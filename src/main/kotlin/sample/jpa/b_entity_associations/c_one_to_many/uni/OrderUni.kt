@@ -7,10 +7,9 @@ import jakarta.persistence.OneToMany
 import sample.jpa.a_entiity.id.TsId
 
 @Entity
-class Order(
+class OrderUni(
     val name: String
 ) : TsId() {
-
-    @OneToMany(fetch = FetchType.EAGER, cascade = [CascadeType.ALL], mappedBy = "team")
-    var orderItemList: List<OrderItem> = mutableListOf()
+    @OneToMany(fetch = FetchType.EAGER, cascade = [CascadeType.ALL], orphanRemoval = true)
+    var orderUniItems: MutableSet<OrderUniItem> = mutableSetOf()
 }

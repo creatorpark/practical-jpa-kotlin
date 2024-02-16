@@ -1,7 +1,7 @@
-package sample.jpa.b_entity_associations.d_many_to_many.uni
+package sample.jpa.b_entity_associations.b_many_to_one.bi
 
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface PostRepository : CrudRepository<Post, Long>
+interface PlayerRepository : CrudRepository<Player, Long>

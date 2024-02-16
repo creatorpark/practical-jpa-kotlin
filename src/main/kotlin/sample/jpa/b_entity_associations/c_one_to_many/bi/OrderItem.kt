@@ -6,8 +6,6 @@ import jakarta.persistence.ManyToOne
 import sample.jpa.a_entiity.id.TsId
 
 
-// 양방향으로 해야하는 이유
-// 
 @Entity
 class OrderItem(
     order: Order,
@@ -15,7 +13,10 @@ class OrderItem(
     var count: Long,
     var price: Long
 ) : TsId() {
+
     @ManyToOne
-    @JoinColumn(name = "ORDER_ID")
+    @JoinColumn(name = "ORDER_ID", referencedColumnName = "ID")
     var order: Order = order
+
+
 }

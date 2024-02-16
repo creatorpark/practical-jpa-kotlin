@@ -67,11 +67,19 @@ class EntityTransitionTests(
             assertEntityState(testEntity, EntityState.DETACHED)
         }
 
+        // https://vladmihalcea.com/jpa-persist-and-merge/
+        // merge를 직접적으로 경험하는 경우는 거의 없다.
         expect("합병(merged) 상태") {
             var testEntity = IncrementIdEntity("Alice")
             assertEntityState(testEntity, EntityState.TRANSIENT)
-
+            em.persist(testEntity)
+            em.detach(testEntity)
+            em.contains(testEntity) shouldBe false
+            testEntity.name = "Stella"
+            // INSERT가 아닌 UPDATE문이 실행 된다.
             var mergeEntity = em.merge(testEntity)
+            mergeEntity.name shouldBe "Stella"
+            em.flush()
             assertEntityState(mergeEntity, EntityState.PERSISTENT)
         }
 

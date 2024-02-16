@@ -5,11 +5,8 @@ import sample.jpa.a_entiity.id.TsId
 
 
 @Entity
-class OrderItem(
-    order: Order,
+class OrderUniItem(
     var name: String,
     var count: Long,
     var price: Long
-) : TsId() {
-    var order: Order = order,
-}
+) : TsId()

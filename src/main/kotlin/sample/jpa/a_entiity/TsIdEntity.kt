@@ -5,5 +5,5 @@ import sample.jpa.a_entiity.id.TsId
 
 @Entity
 class TsIdEntity(
-    val name: String
+    var name: String
 ) : TsId()

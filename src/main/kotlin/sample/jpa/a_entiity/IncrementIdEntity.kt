@@ -5,5 +5,5 @@ import sample.jpa.a_entiity.id.IncrementId
 
 @Entity
 class IncrementIdEntity(
-    val name: String
+    var name: String
 ) : IncrementId()
