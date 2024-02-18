@@ -8,9 +8,8 @@ import sample.jpa.a_entiity.id.TsId
 
 /**
  * 1:N은 연관 관계를 1쪽에서 관리하겠다는 뜻이다.
- * 이 모델은 권장하지 않으며, 한다면 양방향으로 해야한다.
+ * 이 모델은 양방향으로 해야한다.
  * 양방향으로 하지 않으면 UPDATE문이 발생한다.
- *
  */
 @Entity
 class Order(

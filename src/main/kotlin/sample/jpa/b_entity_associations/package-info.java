@@ -33,4 +33,4 @@ package sample.jpa.b_entity_associations;
  */
 
 
-
+// CASECADE https://milenote.tistory.com/112
