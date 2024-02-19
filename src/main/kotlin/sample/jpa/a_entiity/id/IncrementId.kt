@@ -20,14 +20,12 @@ class IncrementId : AbstractId<Long>() {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Suppress("INAPPLICABLE_JVM_NAME")
     @get:JvmName("_id")
-    var id: Long? = null
+    val id: Long? = null
 
     override fun getId(): Long = id!!
 
     override fun equalsId(obj: Any): Boolean {
-        print("equalsId CALL")
         return if (obj is HibernateProxy) {
-            print("equalsId CALL - PROXY")
             id != null && id == obj.hibernateLazyInitializer.identifier
         } else {
             id != null && id == (obj as IncrementId).id

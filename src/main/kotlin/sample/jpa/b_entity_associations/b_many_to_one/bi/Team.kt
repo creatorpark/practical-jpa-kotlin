@@ -11,4 +11,14 @@ class Team(
 
     @OneToMany(mappedBy = "team")
     var players: MutableSet<Player> = mutableSetOf()
+
+    fun addPlayer(player: Player) {
+        player.team = this
+        players.add(player)
+    }
+
+    fun removePlayer(player: Player) {
+//        player.team = null
+        players.remove(player)
+    }
 }

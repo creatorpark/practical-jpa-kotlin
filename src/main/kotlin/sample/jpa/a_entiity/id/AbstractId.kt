@@ -20,22 +20,16 @@ abstract class AbstractId<ID> : Persistable<ID> {
     }
 
     override fun equals(other: Any?): Boolean {
-        println("equals CALL")
         if (this === other) return true
-        println("this === other false")
         if (other == null) return false
-        println("other == null true")
         println("other is HibernateProxy " + (other is HibernateProxy))
         val otherClass = if (other is HibernateProxy) {
-            print("OTHER IS HIBERNATE PROXY")
             other.hibernateLazyInitializer.persistentClass
         } else {
             other::class.java
         }
-
         println("this is HibernateProxy " + (this is HibernateProxy))
         val thisClass = if (this is HibernateProxy) {
-            print("THIS IS HIBERNATE PROXY")
             this.hibernateLazyInitializer.persistentClass
         } else {
             this::class.java

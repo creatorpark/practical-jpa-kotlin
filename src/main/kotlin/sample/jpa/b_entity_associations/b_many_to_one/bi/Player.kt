@@ -13,14 +13,8 @@ import sample.jpa.a_entiity.id.IncrementId
 class Player(
     var name: String,
     var uniformNumber: Int,
-
+) : IncrementId() {
     @ManyToOne(optional = false)
     @JoinColumn(name = "TEAM_ID", referencedColumnName = "ID")
-    var team: Team
-) : IncrementId() {
-
-//    fun changeTeam(team: Team) {
-//        this.team = team
-//        team.players.add(this)
-//    }
+    lateinit var team: Team
 }

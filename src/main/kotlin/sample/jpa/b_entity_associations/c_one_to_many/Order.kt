@@ -13,6 +13,7 @@ import sample.jpa.a_entiity.id.IncrementId
  *
  * 양방향 매핑은 존재X
  * 실제적으로는 ManyToOne 방법임.
+ * https://vladmihalcea.com/the-best-way-to-map-a-onetomany-association-with-jpa-and-hibernate/
  */
 @Entity
 @Table(name = "_order")
