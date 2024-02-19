@@ -7,6 +7,7 @@ import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.context.annotation.Import
+import org.springframework.test.context.jdbc.Sql
 import sample.commons.P6SpyLogConfig
 import sample.commons.toStringField
 import sample.jpa.a_entiity.IncrementIdEntity
@@ -14,7 +15,7 @@ import sample.jpa.a_entiity.IncrementIdEntityRepository
 
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
-//@Sql("classpath:sql/table.sql")
+@Sql("classpath:sql/table-a_entity.sql")
 class SaveEntityEqualsHashCodeTests(
     val repository: IncrementIdEntityRepository
 ) : ExpectSpec({

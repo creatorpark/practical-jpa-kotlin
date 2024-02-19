@@ -6,11 +6,16 @@ import jakarta.persistence.EntityManager
 import jakarta.persistence.PersistenceContext
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.context.annotation.Import
+import org.springframework.test.context.jdbc.Sql
 import sample.commons.P6SpyLogConfig
 
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
-class ManyToOneTests(
+@Sql(
+    "classpath:sql/table-b_associations-many-to-one-uni.sql",
+    executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
+)
+class ManyToOneUniTests(
     @PersistenceContext
     val em: EntityManager
 ) : ExpectSpec({

@@ -1,4 +1,4 @@
-package sample.jpa.b_entity_associations.c_one_to_many.bi
+package sample.jpa.b_entity_associations.c_one_to_many
 
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Repository
