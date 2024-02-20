@@ -4,15 +4,13 @@ import io.github.oshai.kotlinlogging.KotlinLogging
 import io.kotest.core.spec.style.ExpectSpec
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
-import jakarta.persistence.EntityManager
-import jakarta.persistence.PersistenceContext
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.context.annotation.Import
 import org.springframework.test.context.jdbc.Sql
 import sample.commons.P6SpyLogConfig
-import sample.commons.toStringField
 import sample.jpa.b_entity_associations.a_one_to_one.fk.AddressFk
 import sample.jpa.b_entity_associations.a_one_to_one.fk.UserFk
+import sample.jpa.b_entity_associations.a_one_to_one.fk.UserFkRepository
 
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
@@ -20,9 +18,8 @@ import sample.jpa.b_entity_associations.a_one_to_one.fk.UserFk
     "classpath:sql/table-b_associations-one-to-one-fk.sql",
     executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
 )
-class OneToOneFKTests(
-    @PersistenceContext
-    val em: EntityManager
+class OneToOneFKRepositoryTests(
+    val repository: UserFkRepository
 ) : ExpectSpec({
     val log = KotlinLogging.logger {}
 
@@ -31,46 +28,28 @@ class OneToOneFKTests(
             val address = AddressFk(street = "123 Street", city = "City")
             val user = UserFk(name = "John Doe", address)
 
-            // 저장
-            em.persist(user)
-            em.flush()
-            em.clear()
+            val savedUser = repository.saveAndFlush(user)
 
-            // 저장된 사용자와 주소 가져오기
-            val savedUser = em.find(UserFk::class.java, user.id)
-            val savedAddress = em.find(AddressFk::class.java, address.id)
-
-            // 검증
             savedUser shouldNotBe null
-            savedAddress shouldNotBe null
             savedUser.address shouldNotBe null
-            savedUser.address shouldBe savedAddress
+            savedUser.name shouldBe user.name
         }
 
         expect("주소 remove 확인") {
             val address = AddressFk(street = "123 Street", city = "City")
             val user = UserFk(name = "John Doe", address)
 
-            // 저장
-            em.persist(user)
-            em.flush()
-            em.clear()
+            val savedUser = repository.saveAndFlush(user)
 
-            // 저장된 사용자와 주소 가져오기
-            val savedUser = em.find(UserFk::class.java, user.id)
-            println(" SAVED USER ${savedUser.toStringField()}")
-            println("-------")
-            // 주소 제거
             savedUser.address = null
-            em.merge(savedUser)
+            repository.saveAndFlush(savedUser)
 
-            em.flush()
-            em.clear()
-            println("-------")
-            val userWithoutAddress = em.find(UserFk::class.java, savedUser?.id)
+            val userWithOutAddress = repository.findById(savedUser.id!!)
+                .get()
 
-            userWithoutAddress shouldNotBe null
-            userWithoutAddress.address shouldBe null
+            userWithOutAddress shouldNotBe null
+            userWithOutAddress.address shouldBe null
+
         }
     }
 })

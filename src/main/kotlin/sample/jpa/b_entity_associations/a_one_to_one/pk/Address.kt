@@ -1,21 +1,21 @@
 package sample.jpa.b_entity_associations.a_one_to_one.pk
 
 import jakarta.persistence.Entity
-import sample.jpa.a_entiity.id.TsId
+import jakarta.persistence.Id
+import jakarta.persistence.MapsId
+import jakarta.persistence.OneToOne
 
-/**
- * https://vladmihalcea.com/change-one-to-one-primary-key-column-jpa-hibernate/
- */
 @Entity
 class Address(
-    val name: String,
-    val uniformNumber: Int,
-    user: User
-) : TsId() {
+    val street: String,
+    val city: String
+) {
+    @Id
+    val id: Long? = null
 
-//    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-//    @JoinColumn(name = "TEAM_ID", referencedColumnName = "ID")
-//    var user: User = user
+    @OneToOne
+    @MapsId // Child PK가 Parent PK와 동일한 경우
+    lateinit var user: User
 }
 
 

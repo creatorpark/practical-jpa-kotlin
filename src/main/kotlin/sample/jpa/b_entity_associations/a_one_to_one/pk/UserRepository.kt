@@ -1,7 +1,7 @@
-package sample.jpa.b_entity_associations.d_many_to_many.uni
+package sample.jpa.b_entity_associations.a_one_to_one.pk
 
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface PostUniRepository : JpaRepository<PostUni, Long>
+interface UserRepository : JpaRepository<User, Long>

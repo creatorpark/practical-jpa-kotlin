@@ -16,7 +16,7 @@ import sample.commons.P6SpyLogConfig
     "classpath:sql/table-b_associations-one-to-n.sql",
     executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
 )
-class OneToManyTests(
+class OneToManyUniTests(
     @PersistenceContext
     val em: EntityManager
 ) : ExpectSpec({
