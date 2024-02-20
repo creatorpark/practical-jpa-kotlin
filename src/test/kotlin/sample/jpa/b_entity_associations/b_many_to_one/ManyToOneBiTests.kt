@@ -24,8 +24,8 @@ class ManyToOneBiTests(
 ) : ExpectSpec({
     val log = KotlinLogging.logger {}
 
-    context("N:1 양방향 테스트") {
-        expect("팀, 선수 저장") {
+    context("N:1 Bidirectional") {
+        expect("PERSIST") {
             val team = Team("Team A")
             val player1 = Player("Player 1", 10)
             val player2 = Player("Player 2", 20)
@@ -41,9 +41,10 @@ class ManyToOneBiTests(
             savedTeam shouldNotBe null
             savedTeam.name shouldBeEqual "Team A"
             savedTeam.players.size shouldBe 2
-            savedTeam.players.map { it.name }.containsAll(listOf("Player 1", "Player 2"))
+            savedTeam.players.map { it.name }
+                .containsAll(listOf("Player 1", "Player 2"))
         }
-        expect("Player remove 확인") {
+        expect("REMOVE") {
             // Given
             val team = Team("Team A")
             val player1 = Player("Player 1", 10)
@@ -67,7 +68,8 @@ class ManyToOneBiTests(
             val updatedTeam = em.find(Team::class.java, team.id)
             updatedTeam shouldNotBe null
             updatedTeam?.players?.size shouldBe 1
-            updatedTeam?.players?.map { it.name }?.contains(playerToRemove?.name) shouldBe false
+            updatedTeam?.players?.map { it.name }
+                ?.contains(playerToRemove?.name) shouldBe false
         }
     }
 })

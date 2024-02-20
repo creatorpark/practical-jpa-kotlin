@@ -26,8 +26,8 @@ class OneToOneFKTests(
 ) : ExpectSpec({
     val log = KotlinLogging.logger {}
 
-    context("1:1 FK 양방향 테스트") {
-        expect("사용자, 주소 저장") {
+    context("1:1 FK Bidirectional") {
+        expect("PERSIST") {
             val address = AddressFk(street = "123 Street", city = "City")
             val user = UserFk(name = "John Doe", address)
 
@@ -47,7 +47,7 @@ class OneToOneFKTests(
             savedUser.address shouldBe savedAddress
         }
 
-        expect("주소 remove 확인") {
+        expect("REMOVE") {
             val address = AddressFk(street = "123 Street", city = "City")
             val user = UserFk(name = "John Doe", address)
 

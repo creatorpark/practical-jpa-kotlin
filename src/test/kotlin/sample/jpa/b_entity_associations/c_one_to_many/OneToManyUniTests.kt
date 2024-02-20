@@ -13,7 +13,7 @@ import sample.commons.P6SpyLogConfig
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
 @Sql(
-    "classpath:table/associations/one-to-n.sql",
+    "classpath:table/associations/one-to-many.sql",
     executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
 )
 class OneToManyUniTests(
@@ -22,8 +22,8 @@ class OneToManyUniTests(
 ) : ExpectSpec({
     val log = KotlinLogging.logger {}
 
-    context("1:N 단방향 저장") {
-        expect("저장 된 데이터 확인") {
+    context("1:N Unidirectional") {
+        expect("PERSIST") {
             val order = Order(name = "주문")
             val orderItem1 = OrderItem(name = "상품1", count = 1, price = 1000L)
             val orderItem2 = OrderItem(name = "상품2", count = 2, price = 2000L)

@@ -22,13 +22,11 @@ abstract class AbstractId<ID> : Persistable<ID> {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (other == null) return false
-        println("other is HibernateProxy " + (other is HibernateProxy))
         val otherClass = if (other is HibernateProxy) {
             other.hibernateLazyInitializer.persistentClass
         } else {
             other::class.java
         }
-        println("this is HibernateProxy " + (this is HibernateProxy))
         val thisClass = if (this is HibernateProxy) {
             this.hibernateLazyInitializer.persistentClass
         } else {

@@ -21,11 +21,11 @@ class ManyToManyBiTests(
 ) : ExpectSpec({
     val log = KotlinLogging.logger {}
 
-    context("M:N 양방향 테스트") {
-        expect("글, 댓글 저장") {
+    context("M:N Bidirectional") {
+        expect("PERSIST") {
 
         }
-        expect("댓글 REMOVE 확인") {
+        expect("REMOVE") {
 
         }
     }

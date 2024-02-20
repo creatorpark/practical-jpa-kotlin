@@ -24,9 +24,8 @@ class ManyToOneUniTests(
     val em: EntityManager
 ) : ExpectSpec({
     val log = KotlinLogging.logger {}
-    context("N:1 단방향 테스트") {
-
-        expect("팀, 선수 저장") {
+    context("N:1 Unidirectional") {
+        expect("PERSIST") {
             // Given
             val team = TeamUni("Team A")
             val player1 = PlayerUni("Player 1", 10)
@@ -49,10 +48,11 @@ class ManyToOneUniTests(
                 .setParameter("teamId", team.id)
                 .resultList
             players.size shouldBe 2
-            players.map { it.name }.containsAll(listOf("Player 1", "Player 2"))
+            players.map { it.name }
+                .containsAll(listOf("Player 1", "Player 2"))
         }
 
-        expect("선수 제외") {
+        expect("REMOVE") {
             // Given
             val team = TeamUni("Team A")
             val player1 = PlayerUni("Player 1", 10)
@@ -81,7 +81,8 @@ class ManyToOneUniTests(
                     .setParameter("teamId", team.id)
                     .resultList
             updatedPlayers.size shouldBe 1
-            updatedPlayers.map { it.name }.contains(playerToRemove?.name) shouldBe false
+            updatedPlayers.map { it.name }
+                .contains(playerToRemove?.name) shouldBe false
         }
     }
 })

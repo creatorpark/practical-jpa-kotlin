@@ -25,8 +25,8 @@ class OneToOnePKTests(
 ) : ExpectSpec({
     val log = KotlinLogging.logger {}
 
-    context("1:1 PK 양방향 테스트") {
-        expect("사용자, 주소 저장") {
+    context("1:1 PK Bidirectional") {
+        expect("PERSIST") {
             val address = Address(street = "123 Street", city = "City")
             val user = User(name = "John Doe", address = address)
 
@@ -40,7 +40,7 @@ class OneToOnePKTests(
             savedUser shouldNotBe null
             savedAddress shouldNotBe null
         }
-        expect("주소 remove 확인") {
+        expect("REMOVE") {
             val address = Address(street = "123 Street", city = "City")
             val user = User(name = "John Doe", address = address)
 
