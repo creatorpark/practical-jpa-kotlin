@@ -11,8 +11,6 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.context.annotation.Import
 import org.springframework.test.context.jdbc.Sql
 import sample.commons.P6SpyLogConfig
-import sample.jpa.b_entity_associations.b_many_to_one.bi.Player
-import sample.jpa.b_entity_associations.b_many_to_one.bi.Team
 
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
