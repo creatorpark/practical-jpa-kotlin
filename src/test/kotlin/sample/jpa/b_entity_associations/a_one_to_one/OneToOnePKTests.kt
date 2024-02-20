@@ -16,7 +16,7 @@ import sample.jpa.b_entity_associations.a_one_to_one.pk.User
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
 @Sql(
-    "classpath:sql/table-b_associations-one-to-one-pk.sql",
+    "classpath:table/associations/one-to-one-pk.sql",
     executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
 )
 class OneToOnePKTests(

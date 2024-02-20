@@ -17,7 +17,7 @@ import sample.jpa.b_entity_associations.a_one_to_one.fk.UserFk
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
 @Sql(
-    "classpath:sql/table-b_associations-one-to-one-fk.sql",
+    "classpath:table/associations/one-to-one-fk.sql",
     executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
 )
 class OneToOneFKTests(

@@ -16,7 +16,7 @@ import sample.jpa.b_entity_associations.b_many_to_one.uni.TeamUni
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
 @Sql(
-    "classpath:sql/table-b_associations-many-to-one-uni.sql",
+    "classpath:table/associations/many-to-one-uni.sql",
     executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
 )
 class ManyToOneUniTests(

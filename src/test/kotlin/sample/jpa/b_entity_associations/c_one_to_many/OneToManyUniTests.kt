@@ -13,7 +13,7 @@ import sample.commons.P6SpyLogConfig
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
 @Sql(
-    "classpath:sql/table-b_associations-one-to-n.sql",
+    "classpath:table/associations/one-to-n.sql",
     executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
 )
 class OneToManyUniTests(

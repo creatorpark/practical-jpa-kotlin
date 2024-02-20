@@ -6,15 +6,28 @@ import jakarta.persistence.EntityManager
 import jakarta.persistence.PersistenceContext
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.context.annotation.Import
+import org.springframework.test.context.jdbc.Sql
 import sample.commons.P6SpyLogConfig
 
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
-class ManyToManyUniDiTests(
+@Sql(
+    "classpath:table/associations/many-to-many-uni.sql",
+    executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
+)
+class ManyToManyUniTests(
     @PersistenceContext
     val em: EntityManager
 ) : ExpectSpec({
     val log = KotlinLogging.logger {}
 
+    context("M:N 단방향 테스트") {
+        expect("글, 댓글 저장") {
+
+        }
+        expect("댓글 REMOVE 확인") {
+
+        }
+    }
 
 })

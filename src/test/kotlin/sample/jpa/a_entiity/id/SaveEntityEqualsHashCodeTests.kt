@@ -15,7 +15,7 @@ import sample.jpa.a_entiity.IncrementIdEntityRepository
 
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
-@Sql("classpath:sql/table-a_entity.sql")
+@Sql("classpath:table/a_entity.sql")
 class SaveEntityEqualsHashCodeTests(
     val repository: IncrementIdEntityRepository
 ) : ExpectSpec({

@@ -15,7 +15,7 @@ import sample.commons.P6SpyLogConfig
 @DataJpaTest(showSql = false)
 @Import(P6SpyLogConfig::class)
 @Sql(
-    "classpath:sql/table-b_associations-many-to-one-bi.sql",
+    "classpath:table/associations/many-to-one-bi.sql",
     executionPhase = Sql.ExecutionPhase.BEFORE_TEST_CLASS
 )
 class ManyToOneBiTests(
