@@ -26,10 +26,7 @@ class User(
         address.user = this
     }
 
-    @OneToOne(
-        mappedBy = "user", cascade = [CascadeType.ALL],
-        orphanRemoval = true
-    )
+    @OneToOne(fetch = FetchType.LAZY, mappedBy = "user", cascade = [CascadeType.ALL], orphanRemoval = true)
     @PrimaryKeyJoinColumn
     var address: Address? = address
         set(value) {

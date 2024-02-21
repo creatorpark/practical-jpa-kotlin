@@ -20,7 +20,7 @@ class Order(
 ) : IncrementId() {
 
     // FK가 OrderItem에 있으므로 Update가 발생한다.
-    @OneToMany(fetch = FetchType.EAGER, cascade = [CascadeType.ALL], orphanRemoval = true)
+    @OneToMany(cascade = [CascadeType.ALL], orphanRemoval = true)
     @JoinColumn(name = "ORDER_ID", referencedColumnName = "ID")
     val orderItems: MutableSet<OrderItem> = mutableSetOf()
 }

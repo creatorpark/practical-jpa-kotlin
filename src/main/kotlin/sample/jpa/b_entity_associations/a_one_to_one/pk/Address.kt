@@ -1,9 +1,6 @@
 package sample.jpa.b_entity_associations.a_one_to_one.pk
 
-import jakarta.persistence.Entity
-import jakarta.persistence.Id
-import jakarta.persistence.MapsId
-import jakarta.persistence.OneToOne
+import jakarta.persistence.*
 
 @Entity
 class Address(
@@ -13,7 +10,7 @@ class Address(
     @Id
     val id: Long? = null
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @MapsId // Child PK가 Parent PK와 동일한 경우
     lateinit var user: User
 }
