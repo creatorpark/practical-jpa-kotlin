@@ -7,13 +7,8 @@ import sample.jpa.a_entiity.id.IncrementId
  * JPA 1:1 PK는 양방향을 사용한다.
  * FK는 단방향이 되는데, PK는 MapsID를 사용해야 양방향으로 인식한다.
  *
+ * Child Entity의 이름을 변경하고 싶으면 @JoinColumn을 사용해야한다.ㅋㅋㅋ
  * https://vladmihalcea.com/change-one-to-one-primary-key-column-jpa-hibernate/
- *
- * just adding the JPA @OneToOne annotation in the child entity
- * does not render a true one-to-one table relationship
- * since a separate Foreign Key column will be used.
- * Only when adding the @MapsId annotation will the JPA one-to-one association
- * map to a real one-to-one table relationship.
  */
 @Table(name = "_user")
 @Entity
