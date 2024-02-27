@@ -8,7 +8,7 @@ CREATE TABLE team_uni
 CREATE TABLE player_uni
 (
     id             BIGINT       NOT NULL AUTO_INCREMENT COMMENT 'SEQ_ID',
-    team_uni_id    BIGINT       NOT NULL COMMENT 'TEAM_UNI_ID(FK)',
+    team_uni_id    BIGINT       NULL COMMENT 'TEAM_UNI_ID(FK)',
     name           VARCHAR(100) NOT NULL COMMENT '이름',
     uniform_number BIGINT       NOT NULL COMMENT '유니폼',
     PRIMARY KEY (id),

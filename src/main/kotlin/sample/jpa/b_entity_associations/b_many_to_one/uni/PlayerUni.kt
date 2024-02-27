@@ -13,6 +13,11 @@ class PlayerUni(
     var uniformNumber: Int,
 ) : IncrementId() {
 
+    /**
+     * If the join is for a OneToOne or ManyToOne mapping using a foreign key mapping strategy,
+     * the foreign key column is in the table of
+     * the source entity or embeddable.
+     */
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "TEAM_UNI_ID")
     lateinit var team: TeamUni

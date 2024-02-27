@@ -11,8 +11,8 @@ class Player(
     var name: String,
     var uniformNumber: Int,
 ) : IncrementId() {
-    
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
     @JoinColumn(name = "TEAM_ID", referencedColumnName = "ID")
-    lateinit var team: Team
+    var team: Team? = null
 }
