@@ -22,7 +22,6 @@ class Team(
     var name: String
 ) : IncrementId() {
 
-    // 이건 테스트 해봐야 한다.
     @OneToMany(mappedBy = "team", cascade = [CascadeType.ALL], orphanRemoval = false)
     var players: MutableSet<Player> = mutableSetOf()
 
