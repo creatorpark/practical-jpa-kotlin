@@ -1,7 +1,7 @@
 package sample.jpa.b_entity_associations.d_many_to_many
 
 import jakarta.persistence.*
-import sample.jpa.a_entiity.id.IncrementId
+import sample.jpa.a_entiity.a_id.IncrementId
 
 @Entity
 class Post(

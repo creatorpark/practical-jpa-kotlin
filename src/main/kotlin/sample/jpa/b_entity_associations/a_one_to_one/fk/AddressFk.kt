@@ -5,7 +5,7 @@ import jakarta.persistence.FetchType
 import jakarta.persistence.JoinColumn
 import jakarta.persistence.OneToOne
 import sample.commons.toStringField
-import sample.jpa.a_entiity.id.IncrementId
+import sample.jpa.a_entiity.a_id.IncrementId
 
 
 @Entity

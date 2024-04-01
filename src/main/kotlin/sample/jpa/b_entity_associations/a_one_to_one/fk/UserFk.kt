@@ -4,7 +4,7 @@ import jakarta.persistence.CascadeType
 import jakarta.persistence.Entity
 import jakarta.persistence.FetchType
 import jakarta.persistence.OneToOne
-import sample.jpa.a_entiity.id.IncrementId
+import sample.jpa.a_entiity.a_id.IncrementId
 
 @Entity
 class UserFk(

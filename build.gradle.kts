@@ -1,15 +1,11 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-
-// Kotlin JPA With Query DSL
-// https://v3.leedo.me/devs/118
 plugins {
     val kotlinVersion = "1.9.22"
     var springBootVersion = "3.2.2"
 
     id("org.springframework.boot") version springBootVersion
     id("io.spring.dependency-management") version "1.1.4"
-    // kapt는 자바로 작성되어 있으므로 id로 적용됨
     id("org.jetbrains.kotlin.kapt") version kotlinVersion
 
     kotlin("jvm") version kotlinVersion
@@ -42,7 +38,6 @@ allOpen {
 
 dependencies {
     val kotlin = "1.9.22"
-
     val log = "5.0.0-beta-02"
 
     val queryDsl = "5.0.0"
@@ -57,14 +52,11 @@ dependencies {
     implementation("com.querydsl:querydsl-jpa:${queryDsl}:jakarta")
     implementation("com.h2database:h2")
     implementation("com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0")
-
     implementation("io.hypersistence:hypersistence-utils-hibernate-62:3.5.1")
-    // infra
-    // https://github.com/FasterXML/jackson-module-kotlin
-    // jackson-module-kotlin 버전과 kotlin-reflect 버전을 맞춰야함.
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.16.1")
-    implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlin}")
 
+    // Infra
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.17.0")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlin}")
     implementation("io.github.oshai:kotlin-logging-jvm:${log}")
     // TEST
     testImplementation("com.h2database:h2")

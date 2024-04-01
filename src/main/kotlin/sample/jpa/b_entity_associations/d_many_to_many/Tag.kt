@@ -2,7 +2,7 @@ package sample.jpa.b_entity_associations.d_many_to_many
 
 import jakarta.persistence.Entity
 import jakarta.persistence.ManyToMany
-import sample.jpa.a_entiity.id.IncrementId
+import sample.jpa.a_entiity.a_id.IncrementId
 
 
 @Entity

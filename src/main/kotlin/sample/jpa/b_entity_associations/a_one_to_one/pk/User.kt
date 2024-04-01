@@ -1,7 +1,7 @@
 package sample.jpa.b_entity_associations.a_one_to_one.pk
 
 import jakarta.persistence.*
-import sample.jpa.a_entiity.id.IncrementId
+import sample.jpa.a_entiity.a_id.IncrementId
 
 /**
  * JPA 1:1 PK는 양방향을 사용한다.

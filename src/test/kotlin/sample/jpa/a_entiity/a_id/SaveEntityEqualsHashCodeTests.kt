@@ -1,4 +1,4 @@
-package sample.jpa.a_entiity.id
+package sample.jpa.a_entiity.a_id
 
 import io.github.oshai.kotlinlogging.KotlinLogging
 import io.kotest.assertions.throwables.shouldThrow
