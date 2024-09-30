@@ -5,7 +5,6 @@ import jakarta.persistence.Id
 import jakarta.persistence.MappedSuperclass
 import org.hibernate.proxy.HibernateProxy
 
-
 /**
  * 기본적으로 사용되는 ID전략
  * https://github.com/vladmihalcea/hypersistence-tsid
@@ -16,8 +15,7 @@ import org.hibernate.proxy.HibernateProxy
  * */
 @MappedSuperclass
 class TsId(
-    id: Long = TSID.Factory.getTsid()
-        .toLong()
+    id: Long = TSID.Factory.getTsid().toLong()
 ) : AbstractId<Long>() {
 
     @Id
@@ -33,6 +31,5 @@ class TsId(
         } else {
             id == (obj as TsId).id
         }
-
     }
 }

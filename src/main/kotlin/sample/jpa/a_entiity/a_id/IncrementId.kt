@@ -6,9 +6,11 @@ import jakarta.persistence.Id
 import jakarta.persistence.MappedSuperclass
 import org.hibernate.proxy.HibernateProxy
 
-/**
- * 저장되기 전에는 null일 수 있지만, 그 이후에는 항상 값을 가지므로 getId는 단언문을 사용하였다.
- * 저장되기 전에 ID가 사용되는 경우는 Entity로 Set을 만드는 경우다.
+/*
+ * 1. 영속화전에는 null이다.
+ * 그 이후에는 null이 아니므로 getId는 단언문을 사용했다.
+ *
+ * 2. 영속화전에 ID가 사용되는 경우는 Entity로 Set을 만드는 경우다.
  */
 @MappedSuperclass
 class IncrementId : AbstractId<Long>() {
