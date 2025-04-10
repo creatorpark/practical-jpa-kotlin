@@ -1,6 +1,74 @@
 {
   "recentFiles": [
     {
+      "basename": "Goal",
+      "path": "Goal.md"
+    },
+    {
+      "basename": "Target User(Interview)",
+      "path": "Target User(Interview).md"
+    },
+    {
+      "basename": "0. INDEX",
+      "path": "0. INDEX.md"
+    },
+    {
+      "basename": "0. INDEX - Config",
+      "path": "0. Config/0. INDEX - Config.md"
+    },
+    {
+      "basename": "0. INDEX - Query Design",
+      "path": "D. Query Design/0. INDEX - Query Design.md"
+    },
+    {
+      "basename": "1. Cascading",
+      "path": "E. Command Design/1. Cascading.md"
+    },
+    {
+      "basename": "0. INDEX - Command Design",
+      "path": "E. Command Design/0. INDEX - Command Design.md"
+    },
+    {
+      "basename": "2. optional",
+      "path": "D. Query Design/2. optional.md"
+    },
+    {
+      "basename": "0. INDEX - Entity Associations",
+      "path": "C. Entity Associations/0. INDEX - Entity Associations.md"
+    },
+    {
+      "basename": "0. INDEX - Entity Manager",
+      "path": "B. Entity Manager/0. INDEX - Entity Manager.md"
+    },
+    {
+      "basename": "0. INDEX - Entity",
+      "path": "A. Entity/0. INDEX - Entity.md"
+    },
+    {
+      "basename": "1.1 Serializable",
+      "path": "A. Entity/1.1 Serializable.md"
+    },
+    {
+      "basename": "2.3 @ManyToMany",
+      "path": "C. Entity Associations/2.3 @ManyToMany.md"
+    },
+    {
+      "basename": "2.2 @OneToOne",
+      "path": "C. Entity Associations/2.2 @OneToOne.md"
+    },
+    {
+      "basename": "1. Hibernate Proxy",
+      "path": "D. Query Design/1. Hibernate Proxy.md"
+    },
+    {
+      "basename": "queryDSL",
+      "path": "D. Query Design/3. QueryDSL/queryDSL.md"
+    },
+    {
+      "basename": "1. findById vs getOne",
+      "path": "D. Query Design/3. QueryDSL/1. findById vs getOne.md"
+    },
+    {
       "basename": "1. @JoinColumn",
       "path": "C. Entity Associations/1. @JoinColumn.md"
     },
@@ -29,44 +97,8 @@
       "path": "B. Entity Manager/Spring Tx/1. @Transactional.md"
     },
     {
-      "basename": "Goal",
-      "path": "Goal.md"
-    },
-    {
-      "basename": "Target User(Interview)",
-      "path": "Target User(Interview).md"
-    },
-    {
-      "basename": "1. Cascading",
-      "path": "E. Command Design/1. Cascading.md"
-    },
-    {
-      "basename": "2. optional",
-      "path": "D. Query Design/2. optional.md"
-    },
-    {
-      "basename": "1. Hibernate Proxy",
-      "path": "D. Query Design/1. Hibernate Proxy.md"
-    },
-    {
-      "basename": "queryDSL",
-      "path": "D. Query Design/3. QueryDSL/queryDSL.md"
-    },
-    {
-      "basename": "1. findById vs getOne",
-      "path": "D. Query Design/3. QueryDSL/1. findById vs getOne.md"
-    },
-    {
       "basename": "2. JPQL Query",
       "path": "D. Query Design/2. Spring Data Query/2. JPQL Query.md"
-    },
-    {
-      "basename": "2.3 @ManyToMany",
-      "path": "C. Entity Associations/2.3 @ManyToMany.md"
-    },
-    {
-      "basename": "2.2 @OneToOne",
-      "path": "C. Entity Associations/2.2 @OneToOne.md"
     },
     {
       "basename": "2.1 @OneToMany, @ManyToOne",
@@ -75,14 +107,6 @@
     {
       "basename": "1.1 Associations",
       "path": "C. Entity Associations/1.1 Associations.md"
-    },
-    {
-      "basename": "0. INDEX",
-      "path": "0. INDEX.md"
-    },
-    {
-      "basename": "1.1 Serializable",
-      "path": "A. Entity/1.1 Serializable.md"
     },
     {
       "basename": "1. Date Mapping",
@@ -175,30 +199,6 @@
     {
       "basename": "Tasks Dashboard",
       "path": "Tasks Dashboard.md"
-    },
-    {
-      "basename": "개발 패스",
-      "path": "7. AI/개발 패스.md"
-    },
-    {
-      "basename": "1. Design Patterns",
-      "path": "2. Programming Languages/1. Practical OOP/2. Design Patterns/1. Design Patterns.md"
-    },
-    {
-      "basename": "2. Modern Collaboration - Design Pattern",
-      "path": "2. Programming Languages/1. Practical OOP/2. Design Patterns/2. Modern Collaboration - Design Pattern.md"
-    },
-    {
-      "basename": "Object Overview",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/Object Overview.md"
-    },
-    {
-      "basename": "객체 안 vs 객체 간 vs Bounded Context vs MSA",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/객체 안 vs 객체 간 vs Bounded Context vs MSA.md"
-    },
-    {
-      "basename": "Object Association Backup",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/4. Coolaborations/Object Association Backup.md"
     }
   ],
   "omittedPaths": [
