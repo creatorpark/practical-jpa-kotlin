@@ -1,24 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "1.1 Serializable",
-      "path": "A. Entity/1.1 Serializable.md"
-    },
-    {
-      "basename": "1. Date Mapping",
-      "path": "A. Entity/Mapping/1. Date Mapping.md"
-    },
-    {
-      "basename": "Goal",
-      "path": "Goal.md"
-    },
-    {
-      "basename": "Target User(Interview)",
-      "path": "Target User(Interview).md"
-    },
-    {
-      "basename": "0. INDEX",
-      "path": "0. INDEX.md"
+      "basename": "1. @JoinColumn",
+      "path": "C. Entity Associations/1. @JoinColumn.md"
     },
     {
       "basename": "1.1 Entity Manager와 Spring Data Jpa",
@@ -43,6 +27,66 @@
     {
       "basename": "1. @Transactional",
       "path": "B. Entity Manager/Spring Tx/1. @Transactional.md"
+    },
+    {
+      "basename": "Goal",
+      "path": "Goal.md"
+    },
+    {
+      "basename": "Target User(Interview)",
+      "path": "Target User(Interview).md"
+    },
+    {
+      "basename": "1. Cascading",
+      "path": "E. Command Design/1. Cascading.md"
+    },
+    {
+      "basename": "2. optional",
+      "path": "D. Query Design/2. optional.md"
+    },
+    {
+      "basename": "1. Hibernate Proxy",
+      "path": "D. Query Design/1. Hibernate Proxy.md"
+    },
+    {
+      "basename": "queryDSL",
+      "path": "D. Query Design/3. QueryDSL/queryDSL.md"
+    },
+    {
+      "basename": "1. findById vs getOne",
+      "path": "D. Query Design/3. QueryDSL/1. findById vs getOne.md"
+    },
+    {
+      "basename": "2. JPQL Query",
+      "path": "D. Query Design/2. Spring Data Query/2. JPQL Query.md"
+    },
+    {
+      "basename": "2.3 @ManyToMany",
+      "path": "C. Entity Associations/2.3 @ManyToMany.md"
+    },
+    {
+      "basename": "2.2 @OneToOne",
+      "path": "C. Entity Associations/2.2 @OneToOne.md"
+    },
+    {
+      "basename": "2.1 @OneToMany, @ManyToOne",
+      "path": "C. Entity Associations/2.1 @OneToMany, @ManyToOne.md"
+    },
+    {
+      "basename": "1.1 Associations",
+      "path": "C. Entity Associations/1.1 Associations.md"
+    },
+    {
+      "basename": "0. INDEX",
+      "path": "0. INDEX.md"
+    },
+    {
+      "basename": "1.1 Serializable",
+      "path": "A. Entity/1.1 Serializable.md"
+    },
+    {
+      "basename": "1. Date Mapping",
+      "path": "A. Entity/Mapping/1. Date Mapping.md"
     },
     {
       "basename": "Strategic Design Overview",
@@ -155,50 +199,6 @@
     {
       "basename": "Object Association Backup",
       "path": "2. Programming Languages/1. Practical OOP/1. OOP/4. Coolaborations/Object Association Backup.md"
-    },
-    {
-      "basename": "Composition (UML vs Object Design)",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/4. Coolaborations/Composition (UML vs Object Design).md"
-    },
-    {
-      "basename": "1. Big Object",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/4. Coolaborations/1. Big Object.md"
-    },
-    {
-      "basename": "5. DIP",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/5. DIP.md"
-    },
-    {
-      "basename": "4. ISP",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/4. ISP.md"
-    },
-    {
-      "basename": "3. LSP",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/3. LSP.md"
-    },
-    {
-      "basename": "1. SRP",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/1. SRP.md"
-    },
-    {
-      "basename": "2. OCP",
-      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/2. OCP.md"
-    },
-    {
-      "basename": "Markdown sheet",
-      "path": "0. Tools/Obsidian/Markdown sheet.md"
-    },
-    {
-      "basename": "Link",
-      "path": "0. Tools/Obsidian/Link.md"
-    },
-    {
-      "basename": "Tasks Command Sheet",
-      "path": "0. Tools/Obsidian/Tasks Command Sheet.md"
-    },
-    {
-      "basename": "TOOLS - 옵시디언 사용법 정리",
-      "path": "0. Tools/Obsidian/TOOLS - 옵시디언 사용법 정리.md"
     }
   ],
   "omittedPaths": [
