@@ -1,0 +1,259 @@
+{
+  "main": {
+    "id": "3d58bdccc6608fe0",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a42578350e1003f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be47f14775bae348",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Target User(Interview).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Target User(Interview)"
+            }
+          },
+          {
+            "id": "fae12ee893e574c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "A. Entity/1.1 Serializable.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1.1 Serializable"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f0201b68f4c65631",
+    "type": "split",
+    "children": [
+      {
+        "id": "9998d711efffd84b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd5f72aec1e30a54",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c85d5fbcc6dbbc5e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Policy",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "62ca09b7313f3d05",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "514d61c134f6c9de",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 378.5
+  },
+  "right": {
+    "id": "8afebda27ad06957",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae25b41af3f3e3cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d74f44604ab09c2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1. Practical OOP/1. OOP/0.1 Index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 0.1 Index"
+            }
+          },
+          {
+            "id": "159470db93ec6380",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1. Practical OOP/1. OOP/0.1 Index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 0.1 Index"
+            }
+          },
+          {
+            "id": "d7f287345c016cc0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "df83b5bc5e093736",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1.1 Clean Architecture/1. 어떻게 설계할 것인가/설계 기준에 따라 아키텍쳐를 만든다..md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 설계 기준에 따라 아키텍쳐를 만든다."
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "91f2e942e3344727",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "652ac1dfccdd3950",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "fae12ee893e574c4",
+  "lastOpenFiles": [
+    "A. Entity/Mapping/1. Date Mapping.md",
+    "Goal.md",
+    "Target User(Interview).md",
+    "0. INDEX.md",
+    "B. Entity Manager/1.1 Entity Manager와 Spring Data Jpa.md",
+    "B. Entity Manager/1. Entity Manager persist vs merge vs update.md",
+    "B. Entity Manager/1. Entity Manager.md",
+    "B. Entity Manager/Spring Tx/2. Multi DataSource.md",
+    "B. Entity Manager/Spring Tx/1.1 Transactional 참고자료.md",
+    "B. Entity Manager/Spring Tx/1. @Transactional.md",
+    "A. Entity/1.1 Serializable.md",
+    "5. DevOps/5. Kubernetes/EKS Update/1. 설치.md",
+    "5. DevOps/5. Kubernetes/당근마켓 EKS Update.md",
+    "5. DevOps/5. Kubernetes/Learning Logs - Kubernetes.md",
+    "6. DevTools/Nexus.md",
+    "6. DevTools/Git/0. Index.md",
+    "6. DevTools/Git/Git.md",
+    "4. MSA/MSA Tasks.md",
+    "4. MSA/3. Monitoring/Log/Log.md",
+    "4. MSA/2. Between Services/Communications/gRPC vs Kafka(feat.EDA).md",
+    "4. MSA/2. Between Services/Communications/GRPC/GRPC.md",
+    "3. Computer Science/1. Algorithms/TODO.md",
+    "3. Computer Science/1. Algorithms/Research Alogorithms.md",
+    "2. Programming Languages/2. Kotlin/실행 순서.md",
+    "2. Programming Languages/2. Kotlin/Kotlin Standard Library.md",
+    "2. Programming Languages/2. Kotlin/1. Type/Type Checks and Casts/require.md",
+    "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Docs",
+    "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Model",
+    "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example",
+    "7. AI/3. LLM/ChatGpt",
+    "3. Backend/1. Spring/6. Batch",
+    "z. Attched Files/Programming Languages/DDD/Object Life Cycle.png",
+    "2. Programming Languages/1. Practical OOP/4. DDD/2. The Building Blocks of a MDD/4. The Life Cycle of Domain Object/1. 자료조사",
+    "2. Programming Languages/1. Practical OOP/4. DDD/2. The Building Blocks of a MDD/3. Module/자료 조사",
+    "z. Attched Files/Programming Languages/DDD/A_Model_expressed_in_software.png",
+    "z. Attched Files/Programming Languages/DDD/Ubiquitous Languages.png",
+    "z. Attched Files/Programming Languages/DDD/Ubiquitous Language.png",
+    "z. Attched Files/Programming Languages/DDD",
+    "z. Attched Files/Programming Languages",
+    "2. Programming Languages/1. Practical OOP/4. DDD/3. Refactoring Toward Deeper Insight",
+    "z. Attched Files/inflearn-git.png",
+    "z. Attached Files/2. Web/CSS/typeface-font.jpg",
+    "z. Attached Files/2. Web/CSS/typeface-font-han.jpg",
+    "z. Attached Files/2. Web/CSS/spec-text-word-spacing.jpg",
+    "z. Attached Files/2. Web/CSS/spec-text-word-brek.jpg",
+    "z. Attached Files/2. Web/CSS/spec-text-white-space.jpg",
+    "Untitled.canvas"
+  ]
+}

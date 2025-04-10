@@ -1,0 +1,207 @@
+{
+  "recentFiles": [
+    {
+      "basename": "1.1 Serializable",
+      "path": "A. Entity/1.1 Serializable.md"
+    },
+    {
+      "basename": "1. Date Mapping",
+      "path": "A. Entity/Mapping/1. Date Mapping.md"
+    },
+    {
+      "basename": "Goal",
+      "path": "Goal.md"
+    },
+    {
+      "basename": "Target User(Interview)",
+      "path": "Target User(Interview).md"
+    },
+    {
+      "basename": "0. INDEX",
+      "path": "0. INDEX.md"
+    },
+    {
+      "basename": "1.1 Entity Manager와 Spring Data Jpa",
+      "path": "B. Entity Manager/1.1 Entity Manager와 Spring Data Jpa.md"
+    },
+    {
+      "basename": "1. Entity Manager persist vs merge vs update",
+      "path": "B. Entity Manager/1. Entity Manager persist vs merge vs update.md"
+    },
+    {
+      "basename": "1. Entity Manager",
+      "path": "B. Entity Manager/1. Entity Manager.md"
+    },
+    {
+      "basename": "2. Multi DataSource",
+      "path": "B. Entity Manager/Spring Tx/2. Multi DataSource.md"
+    },
+    {
+      "basename": "1.1 Transactional 참고자료",
+      "path": "B. Entity Manager/Spring Tx/1.1 Transactional 참고자료.md"
+    },
+    {
+      "basename": "1. @Transactional",
+      "path": "B. Entity Manager/Spring Tx/1. @Transactional.md"
+    },
+    {
+      "basename": "Strategic Design Overview",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/4. Strategic Design/Strategic Design Overview.md"
+    },
+    {
+      "basename": "1. Large-Scale Structure",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/4. Strategic Design/3. Large-Scale Structure/1. Large-Scale Structure.md"
+    },
+    {
+      "basename": "DDD Overview",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/DDD Overview.md"
+    },
+    {
+      "basename": "3.1 Model Elements",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/3. Refactoring Toward Deeper Insight/3.1 Model Elements.md"
+    },
+    {
+      "basename": "Deep Model",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/3. Refactoring Toward Deeper Insight/Deep Model.md"
+    },
+    {
+      "basename": "Layered Architecture",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/2. The Building Blocks of a MDD/0. Layered Architecture/Layered Architecture.md"
+    },
+    {
+      "basename": "3.1 Model vs Role",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/3.1 Model vs Role.md"
+    },
+    {
+      "basename": "3. Model",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/3. Model.md"
+    },
+    {
+      "basename": "1. Domain",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/1. Domain.md"
+    },
+    {
+      "basename": "2. Ubiquitous Language",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/2. Ubiquitous Language.md"
+    },
+    {
+      "basename": "1. UL로 논의해서 나오는 결과물",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Docs/1. UL로 논의해서 나오는 결과물.md"
+    },
+    {
+      "basename": "3. Ubiquitous Language의 문서화",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Docs/3. Ubiquitous Language의 문서화.md"
+    },
+    {
+      "basename": "Business Rules vs Business Policy",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Docs/Business Rules vs Business Policy.md"
+    },
+    {
+      "basename": "2.4 Ubiquitous에서 Model을 정제하는 법",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Model/2.4 Ubiquitous에서 Model을 정제하는 법.md"
+    },
+    {
+      "basename": "2.3 Ubiquitous Languages를 Code로 변환",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Model/2.3 Ubiquitous Languages를 Code로 변환.md"
+    },
+    {
+      "basename": "2.2 Ubiquitous Language Example",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Model/2.2 Ubiquitous Language Example.md"
+    },
+    {
+      "basename": "Service",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/2. The Building Blocks of a MDD/2. Service/Service.md"
+    },
+    {
+      "basename": "Service Example",
+      "path": "2. Programming Languages/1. Practical OOP/4. DDD/2. The Building Blocks of a MDD/2. Service/Service Example.md"
+    },
+    {
+      "basename": "Key",
+      "path": "7. AI/3. LLM/ChatGpt/Key.md"
+    },
+    {
+      "basename": "LLM 활용 글 모음",
+      "path": "7. AI/3. LLM/LLM 활용 글 모음.md"
+    },
+    {
+      "basename": "0. readme",
+      "path": "0. readme.md"
+    },
+    {
+      "basename": "Tasks Dashboard",
+      "path": "Tasks Dashboard.md"
+    },
+    {
+      "basename": "개발 패스",
+      "path": "7. AI/개발 패스.md"
+    },
+    {
+      "basename": "1. Design Patterns",
+      "path": "2. Programming Languages/1. Practical OOP/2. Design Patterns/1. Design Patterns.md"
+    },
+    {
+      "basename": "2. Modern Collaboration - Design Pattern",
+      "path": "2. Programming Languages/1. Practical OOP/2. Design Patterns/2. Modern Collaboration - Design Pattern.md"
+    },
+    {
+      "basename": "Object Overview",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/Object Overview.md"
+    },
+    {
+      "basename": "객체 안 vs 객체 간 vs Bounded Context vs MSA",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/객체 안 vs 객체 간 vs Bounded Context vs MSA.md"
+    },
+    {
+      "basename": "Object Association Backup",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/4. Coolaborations/Object Association Backup.md"
+    },
+    {
+      "basename": "Composition (UML vs Object Design)",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/4. Coolaborations/Composition (UML vs Object Design).md"
+    },
+    {
+      "basename": "1. Big Object",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/4. Coolaborations/1. Big Object.md"
+    },
+    {
+      "basename": "5. DIP",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/5. DIP.md"
+    },
+    {
+      "basename": "4. ISP",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/4. ISP.md"
+    },
+    {
+      "basename": "3. LSP",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/3. LSP.md"
+    },
+    {
+      "basename": "1. SRP",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/1. SRP.md"
+    },
+    {
+      "basename": "2. OCP",
+      "path": "2. Programming Languages/1. Practical OOP/1. OOP/3. SOLID/2. OCP.md"
+    },
+    {
+      "basename": "Markdown sheet",
+      "path": "0. Tools/Obsidian/Markdown sheet.md"
+    },
+    {
+      "basename": "Link",
+      "path": "0. Tools/Obsidian/Link.md"
+    },
+    {
+      "basename": "Tasks Command Sheet",
+      "path": "0. Tools/Obsidian/Tasks Command Sheet.md"
+    },
+    {
+      "basename": "TOOLS - 옵시디언 사용법 정리",
+      "path": "0. Tools/Obsidian/TOOLS - 옵시디언 사용법 정리.md"
+    }
+  ],
+  "omittedPaths": [
+    ""
+  ]
+}
