@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "0. INDEX - Config",
+      "path": "0. Config/0. INDEX - Config.md"
+    },
+    {
+      "basename": "Spring Boot의 JPA AutoConfigure",
+      "path": "0. Config/1. JPA Config/Spring Boot의 JPA AutoConfigure.md"
+    },
+    {
+      "basename": "1. Cascading",
+      "path": "D. Command Design/1. Cascading.md"
+    },
+    {
+      "basename": "0. INDEX - Command Design",
+      "path": "D. Command Design/0. INDEX - Command Design.md"
+    },
+    {
       "basename": "Goal",
       "path": "Goal.md"
     },
@@ -13,104 +29,104 @@
       "path": "0. INDEX.md"
     },
     {
-      "basename": "0. INDEX - Config",
-      "path": "0. Config/0. INDEX - Config.md"
+      "basename": "2. optional",
+      "path": "E. Query Design/2. optional.md"
     },
     {
       "basename": "0. INDEX - Query Design",
-      "path": "D. Query Design/0. INDEX - Query Design.md"
+      "path": "E. Query Design/0. INDEX - Query Design.md"
     },
     {
-      "basename": "1. Cascading",
-      "path": "E. Command Design/1. Cascading.md"
+      "basename": "1. findById vs getOne",
+      "path": "C. Entity Associations/3. compare JPQL vs @Query vs QueryDSL/3. QueryDSL/1. findById vs getOne.md"
     },
     {
-      "basename": "0. INDEX - Command Design",
-      "path": "E. Command Design/0. INDEX - Command Design.md"
+      "basename": "queryDSL",
+      "path": "C. Entity Associations/3. compare JPQL vs @Query vs QueryDSL/3. QueryDSL/queryDSL.md"
     },
     {
-      "basename": "2. optional",
-      "path": "D. Query Design/2. optional.md"
+      "basename": "2. JPQL Query",
+      "path": "C. Entity Associations/3. compare JPQL vs @Query vs QueryDSL/2. Spring Data Query/2. JPQL Query.md"
     },
     {
-      "basename": "0. INDEX - Entity Associations",
-      "path": "C. Entity Associations/0. INDEX - Entity Associations.md"
+      "basename": "1. Entity Manager",
+      "path": "B. Entity Manager/4. Entity Manager/1. Entity Manager.md"
     },
     {
-      "basename": "0. INDEX - Entity Manager",
-      "path": "B. Entity Manager/0. INDEX - Entity Manager.md"
+      "basename": "1.1 Entity Manager와 Spring Data Jpa",
+      "path": "B. Entity Manager/2. Entity Status/1.1 Entity Manager와 Spring Data Jpa.md"
+    },
+    {
+      "basename": "1. Entity Manager persist vs merge vs update",
+      "path": "B. Entity Manager/2. Entity Status/1. Entity Manager persist vs merge vs update.md"
     },
     {
       "basename": "0. INDEX - Entity",
       "path": "A. Entity/0. INDEX - Entity.md"
     },
     {
+      "basename": "3. Enum",
+      "path": "A. Entity/5. Converter/1. Predefined Converter/3. Enum.md"
+    },
+    {
+      "basename": "2. Date",
+      "path": "A. Entity/5. Converter/1. Predefined Converter/2. Date.md"
+    },
+    {
+      "basename": "1. Encrypt",
+      "path": "A. Entity/5. Converter/1. Predefined Converter/1. Encrypt.md"
+    },
+    {
       "basename": "1.1 Serializable",
-      "path": "A. Entity/1.1 Serializable.md"
+      "path": "A. Entity/3. Serializable/1.1 Serializable.md"
     },
     {
-      "basename": "2.3 @ManyToMany",
-      "path": "C. Entity Associations/2.3 @ManyToMany.md"
+      "basename": "@Id 작성할 때의 핵심",
+      "path": "A. Entity/2. @Id/@Id 작성할 때의 핵심.md"
     },
     {
-      "basename": "2.2 @OneToOne",
-      "path": "C. Entity Associations/2.2 @OneToOne.md"
-    },
-    {
-      "basename": "1. Hibernate Proxy",
-      "path": "D. Query Design/1. Hibernate Proxy.md"
-    },
-    {
-      "basename": "queryDSL",
-      "path": "D. Query Design/3. QueryDSL/queryDSL.md"
-    },
-    {
-      "basename": "1. findById vs getOne",
-      "path": "D. Query Design/3. QueryDSL/1. findById vs getOne.md"
+      "basename": "@Entity vs @Table 주제의 핵심",
+      "path": "A. Entity/1. @Entity vs @Table/@Entity vs @Table 주제의 핵심.md"
     },
     {
       "basename": "1. @JoinColumn",
-      "path": "C. Entity Associations/1. @JoinColumn.md"
+      "path": "C. Entity Associations/1. @JoinColumn/1. @JoinColumn.md"
     },
     {
-      "basename": "1.1 Entity Manager와 Spring Data Jpa",
-      "path": "B. Entity Manager/1.1 Entity Manager와 Spring Data Jpa.md"
+      "basename": "0. INDEX - Entity Manager",
+      "path": "B. Entity Manager/0. INDEX - Entity Manager.md"
     },
     {
-      "basename": "1. Entity Manager persist vs merge vs update",
-      "path": "B. Entity Manager/1. Entity Manager persist vs merge vs update.md"
+      "basename": "1. Hibernate Proxy",
+      "path": "C. Entity Associations/1. @JoinColumn/3. Proxy/1. Hibernate Proxy.md"
     },
     {
-      "basename": "1. Entity Manager",
-      "path": "B. Entity Manager/1. Entity Manager.md"
+      "basename": "Fetch 전략 Lazy vs Eager",
+      "path": "C. Entity Associations/1. @JoinColumn/Fetch 전략 Lazy vs Eager.md"
     },
     {
-      "basename": "2. Multi DataSource",
-      "path": "B. Entity Manager/Spring Tx/2. Multi DataSource.md"
-    },
-    {
-      "basename": "1.1 Transactional 참고자료",
-      "path": "B. Entity Manager/Spring Tx/1.1 Transactional 참고자료.md"
-    },
-    {
-      "basename": "1. @Transactional",
-      "path": "B. Entity Manager/Spring Tx/1. @Transactional.md"
-    },
-    {
-      "basename": "2. JPQL Query",
-      "path": "D. Query Design/2. Spring Data Query/2. JPQL Query.md"
-    },
-    {
-      "basename": "2.1 @OneToMany, @ManyToOne",
-      "path": "C. Entity Associations/2.1 @OneToMany, @ManyToOne.md"
+      "basename": "기타 자주 사용하는 컨버터 추천",
+      "path": "A. Entity/5. Converter/1. Predefined Converter/기타 자주 사용하는 컨버터 추천.md"
     },
     {
       "basename": "1.1 Associations",
-      "path": "C. Entity Associations/1.1 Associations.md"
+      "path": "C. Entity Associations/2. Associations/1.1 Associations.md"
     },
     {
-      "basename": "1. Date Mapping",
-      "path": "A. Entity/Mapping/1. Date Mapping.md"
+      "basename": "0. INDEX - Entity Associations",
+      "path": "C. Entity Associations/0. INDEX - Entity Associations.md"
+    },
+    {
+      "basename": "2.3 @ManyToMany",
+      "path": "C. Entity Associations/2. Associations/2.3 @ManyToMany.md"
+    },
+    {
+      "basename": "2.2 @OneToOne",
+      "path": "C. Entity Associations/2. Associations/2.2 @OneToOne.md"
+    },
+    {
+      "basename": "2.1 @OneToMany, @ManyToOne",
+      "path": "C. Entity Associations/2. Associations/2.1 @OneToMany, @ManyToOne.md"
     },
     {
       "basename": "Strategic Design Overview",
@@ -171,34 +187,6 @@
     {
       "basename": "2.3 Ubiquitous Languages를 Code로 변환",
       "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Model/2.3 Ubiquitous Languages를 Code로 변환.md"
-    },
-    {
-      "basename": "2.2 Ubiquitous Language Example",
-      "path": "2. Programming Languages/1. Practical OOP/4. DDD/1. Putting Domain Model to Work/Ubiquitous Language Example/UL to Model/2.2 Ubiquitous Language Example.md"
-    },
-    {
-      "basename": "Service",
-      "path": "2. Programming Languages/1. Practical OOP/4. DDD/2. The Building Blocks of a MDD/2. Service/Service.md"
-    },
-    {
-      "basename": "Service Example",
-      "path": "2. Programming Languages/1. Practical OOP/4. DDD/2. The Building Blocks of a MDD/2. Service/Service Example.md"
-    },
-    {
-      "basename": "Key",
-      "path": "7. AI/3. LLM/ChatGpt/Key.md"
-    },
-    {
-      "basename": "LLM 활용 글 모음",
-      "path": "7. AI/3. LLM/LLM 활용 글 모음.md"
-    },
-    {
-      "basename": "0. readme",
-      "path": "0. readme.md"
-    },
-    {
-      "basename": "Tasks Dashboard",
-      "path": "Tasks Dashboard.md"
     }
   ],
   "omittedPaths": [

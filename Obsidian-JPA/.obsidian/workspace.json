@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Goal.md",
+                "file": "0. INDEX.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Goal"
+              "title": "0. INDEX"
+            }
+          },
+          {
+            "id": "35484340f19bc63a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "0. Config/0. INDEX - Config.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0. INDEX - Config"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "N+1",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +95,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "clock",
+              "title": "Recent Files"
             }
           },
           {
@@ -160,10 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1.1 Clean Architecture/1. 어떻게 설계할 것인가/설계 기준에 따라 아키텍쳐를 만든다..md"
+                "file": "0. Config/0. INDEX - Config.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 설계 기준에 따라 아키텍쳐를 만든다."
+              "title": "Outline of 0. INDEX - Config"
             }
           }
         ],
@@ -179,16 +197,15 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,56 +215,57 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "smart-composer:Open smart composer": false
     }
   },
-  "active": "be47f14775bae348",
+  "active": "fd5f72aec1e30a54",
   "lastOpenFiles": [
-    "Target User(Interview).md",
-    "Goal.md",
-    "0. INDEX.md",
+    "0. Config/1. JPA Config/Spring Boot의 JPA AutoConfigure.md",
     "0. Config/0. INDEX - Config.md",
-    "D. Query Design/0. INDEX - Query Design.md",
-    "E. Command Design/1. Cascading.md",
-    "E. Command Design/0. INDEX - Command Design.md",
-    "D. Query Design/2. optional.md",
-    "C. Entity Associations/0. INDEX - Entity Associations.md",
-    "B. Entity Manager/0. INDEX - Entity Manager.md",
+    "D. Command Design/1. Cascading.md",
+    "D. Command Design/0. INDEX - Command Design.md",
+    "Goal.md",
+    "Target User(Interview).md",
+    "0. INDEX.md",
+    "E. Query Design/2. optional.md",
+    "E. Query Design/0. INDEX - Query Design.md",
+    "C. Entity Associations/3. compare JPQL vs @Query vs QueryDSL",
+    "C. Entity Associations/3. compare JPQL vs @Query vs QueryDSL/3. QueryDSL/1. findById vs getOne.md",
+    "C. Entity Associations/3. compare JPQL vs @Query vs QueryDSL/3. QueryDSL/queryDSL.md",
+    "C. Entity Associations/3. compare JPQL vs @Query vs QueryDSL/2. Spring Data Query/2. JPQL Query.md",
+    "B. Entity Manager/4. Entity Manager/1. Entity Manager.md",
+    "B. Entity Manager/2. Entity Status/1.1 Entity Manager와 Spring Data Jpa.md",
+    "B. Entity Manager/2. Entity Status/1. Entity Manager persist vs merge vs update.md",
     "A. Entity/0. INDEX - Entity.md",
-    "A. Entity/1.1 Serializable.md",
-    "C. Entity Associations/2.3 @ManyToMany.md",
-    "C. Entity Associations/2.2 @OneToOne.md",
-    "D. Query Design/1. Hibernate Proxy.md",
-    "D. Query Design/3. QueryDSL/queryDSL.md",
-    "D. Query Design/3. QueryDSL/1. findById vs getOne.md",
+    "A. Entity/5. Converter/1. Predefined Converter/3. Enum.md",
+    "A. Entity/5. Converter/1. Predefined Converter/2. Date.md",
+    "A. Entity/5. Converter/1. Predefined Converter/1. Encrypt.md",
+    "A. Entity/3. Serializable/1.1 Serializable.md",
+    "A. Entity/2. @Id/@Id 작성할 때의 핵심.md",
+    "A. Entity/1. @Entity vs @Table/@Entity vs @Table 주제의 핵심.md",
+    "C. Entity Associations/1. @JoinColumn/1. @JoinColumn.md",
+    "B. Entity Manager/0. INDEX - Entity Manager.md",
+    "A. Entity/A. Entity를 작성할 때 핵심.md",
+    "C. Entity Associations/1. @JoinColumn/3. Proxy/1. Hibernate Proxy.md",
+    "A. Entity/5. Converter/2. Custom Converter",
+    "C. Entity Associations/1. @JoinColumn/3. Proxy",
+    "B. Entity Manager/4. Entity Manager",
+    "B. Entity Manager/2. Entity Status",
+    "B. Entity Manager/1. Unit of Work",
+    "0. Config/3. H2 Config",
+    "0. Config/2. Spy Log Config",
+    "0. Config/1. JPA Config",
+    "A. Entity/5. Converter",
     "z. Attched Files/entity-manager-3.jpg",
     "z. Attched Files/entity-manager-2.jpg",
     "z. Attched Files/entity-manager-1.jpg",
-    "z. Attched Files",
-    "E. Command Design",
-    "D. Query Design/3. QueryDSL",
-    "D. Query Design/2. Spring Data Query/2. JPQL Query.md",
-    "D. Query Design/2. Spring Data Query",
-    "C. Entity Associations/2.1 @OneToMany, @ManyToOne.md",
-    "C. Entity Associations/1.1 Associations.md",
-    "C. Entity Associations/1. @JoinColumn.md",
-    "C. Entity Associations",
-    "B. Entity Manager/Spring Tx/2. Multi DataSource.md",
-    "B. Entity Manager/Spring Tx/1.1 Transactional 참고자료.md",
-    "B. Entity Manager/Spring Tx/1. @Transactional.md",
-    "B. Entity Manager/Spring Tx",
-    "B. Entity Manager/1.1 Entity Manager와 Spring Data Jpa.md",
-    "B. Entity Manager/1. Entity Manager.md",
-    "B. Entity Manager",
-    "A. Entity/Mapping",
-    "A. Entity",
     "entity-manager-3.jpg",
     "entity-manager-2.jpg",
     "entity-manager-1.jpg",
     "z. Attched Files/Data/JPA/entity-manager-3.jpg",
     "z. Attched Files/Data/JPA/entity-manager-2.jpg",
     "z. Attched Files/Data/JPA/entity-manager-1.jpg",
-    "z. Attched Files/Data/JPA",
     "z. Attched Files/Programming Languages/DDD/Object Life Cycle.png",
     "Untitled.canvas"
   ]

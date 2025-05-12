@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
 @Bean
 fun run(report: ConditionEvaluationReport): ApplicationRunner {
     return ApplicationRunner { args: ApplicationArguments? ->
-        report.getConditionAndOutcomesBySource().entries.stream()
+        report.conditionAndOutcomesBySource.entries.stream()
             .filter { (_, value): Map.Entry<String?, ConditionAndOutcomes> -> value.isFullMatch() }
             .filter { (key): Map.Entry<String, ConditionAndOutcomes?> ->
                 !key.contains(
